@@ -1,7 +1,4 @@
-const Comment = require('../models/commentModel');  // Убедись, что путь правильный
-
-
-// Функция для добавления комментария
+const Comment = require('../models/commentModel'); 
 exports.addComment = async (req, res) => {
   const { text } = req.body;
 
@@ -20,8 +17,6 @@ exports.addComment = async (req, res) => {
     return res.status(500).json({ message: 'Ошибка при добавлении комментария' });
   }
 };
-
-// Функция для получения всех комментариев
 exports.getComments = async (req, res) => {
   try {
     const comments = await Comment.findAll();
