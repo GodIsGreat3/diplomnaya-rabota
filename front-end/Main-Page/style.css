@@ -1,0 +1,586 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url(/front-end/fonts/Satoshi-Variable.ttf);
+}
+@font-face {
+    font-family: 'Integral';
+    src: url(/front-end/fonts/Fontspring-DEMO-integralcf-regular.otf);
+}
+
+.element::-webkit-scrollbar {
+    width: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+}
+
+.banner {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.banner a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Integral';
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.searchBar input {
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #ddd;
+    border-radius: 62px;
+    background-color: #F0F0F0;
+}
+
+.icons i {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.hero-section {
+    background: url('/front-end/bg.png') no-repeat center center/cover;
+    padding: 100px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-text {
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 {
+    font-family: 'Integral';
+}
+
+.hero-text p {
+    font-family: 'Satoshi';
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.shopNowButton {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 62px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 210px;
+    height: 52px;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.hero-stats div {
+    text-align: left;
+}
+
+.hero-stats h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero-stats p {
+    font-size: 16px;
+}  
+.brands {
+    background-color: black;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.brand-container img {
+    height: 122px;
+    filter: brightness(0) invert(1);
+    margin: 0 25px;
+}
+
+
+.brand-container .bold {
+    font-weight: bold;
+    height: 45px; 
+}
+
+.products-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Integral';
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Satoshi';
+    font-weight: 700;
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card p {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.price {
+    font-weight: bold;
+    color: #000;
+}
+
+.price.discount {
+    color: red;
+}
+
+.price.discount span {
+    text-decoration: line-through;
+    color: grey;
+    margin-left: 5px;
+}
+
+.view-all {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 62px;
+    cursor: pointer;
+    width: 218px;
+    height: 52px;
+    transition: background 0.3s;
+}
+
+.view-all:hover {
+    background-color: #9e9d9d;
+}
+
+.dress-style-section {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    position: relative;
+}
+
+.style-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.style-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.style-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.style-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Фиксируем размеры карточек */
+.style-card1 {
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 100%;
+    height: 300px;
+}
+
+.style-card2 {
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 100%;
+    height: 300px;
+}
+
+.style-card3 {
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 100%;
+    height: 300px;
+}
+
+.style-card4 {
+    grid-column: span 1;
+    grid-row: span 1;
+    width: 100%;
+    height: 300px;
+}
+
+
+.wishlist-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-columns {
+    margin-right: 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-column a {
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+.newsletter {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.newsletter input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background-color: #5e5e5e;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #eb0000;
+}
+
+.social-icons-b {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    background-color: #756d6d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #ff0000;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ffffff;
+    font-size: 14px;
+    color: #ffffff;
+}
+.shopgray{
+    font-size: 8px;
+    color: #d8d5d5;
+    
+    
+}
+footer {
+    background-color: #f5f5f5; /* Светло-серый фон */
+    padding: 50px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.newsletter {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 15px; /* Скругленные углы */
+    text-align: center;
+}
+.newslettter {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 15px; /* Скругленные углы */
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.newsletter input {
+    width: 60%;
+    padding: 12px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
+}
+
+.newsletter button {
+    width: 60%;
+    padding: 12px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    word-wrap: break-word;
+    line-height: 1.5
+}
+
+.footer-links h3 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    width: 2px;
+    gap: 1px;
+    margin-top: 2px;
+
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 1px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between; /* Распределяет текст и иконки по краям */
+    align-items: center; /* Выравнивает элементы по центру */
+    border-top: 1px solid #ddd; /* Линия перед копирайтом */
+    padding: 20px 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.payment-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Выравнивание иконок по центру */
+    margin-top: 0; /* Убираем лишний отступ сверху */
+}
+
+.footer-bottom p {
+    margin: 0; /* Убираем отступы у текста */
+}
+.description{
+    margin-top: 20px;
+    text-align: center;
+    color: #000000;
+    font-size: 16px;
+    word-break: break-word;
+}
+.emaililput {
+    font-weight: 3px;
+    padding: 13px 17px !important; /* Уменьшаем отступы внутри кнопки */
+    font-size: 20px !important; /* Делаем текст меньше */
+    border-radius: 27px !important; /* Скругление, если нужно */
+    margin-top: 20px;
+}
+
+.emaililpu {
+    font-weight: 3px;
+    padding: 13px 17px !important; /* Уменьшаем отступы внутри кнопки */
+    font-size: 20px !important; /* Делаем текст меньше */
+    border-radius: 27px !important; /* Скругление, если нужно */
+    margin-top: -70px;
+}
+.category-filters {
+    border-radius: 20px;
+}
+
+.comments-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+#comment-input {
+  width: calc(100% - 120px);
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.comment {
+  padding: 8px;
+  margin: 5px 0;
+  border-bottom: 1px solid #ddd;
+}

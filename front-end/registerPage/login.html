@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            Sign up and get 20% off your first order. 
+            <a href="register.html">Sign Up Now</a>
+        </div>
+        <div class="nav">
+            <div class="logo">SHOP.CO</div>
+        </div>
+    </header>
+    <section>
+        <div class="registerCard">
+            <h1>Authorization</h1>
+            <form id="loginForm">
+                <input type="email" name="email" placeholder="Type your email here..." required>
+                <input type="password" name="password" placeholder="Type your password here..." required>
+                <button type="submit">Done!</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector("#loginForm");
+
+            if (!form) {
+                console.error("❌ Форма не найдена!");
+                return;
+            }
+
+            form.addEventListener("submit", async function(event) {
+                event.preventDefault();
+
+                const email = document.querySelector("input[name='email']").value;
+                const password = document.querySelector("input[name='password']").value;
+
+                if (!email || !password) {
+                    alert("❌ Заполните все поля!");
+                    return;
+                }
+
+                try {
+    const response = await fetch("http://localhost:5000/api/users/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password })
+    });
+
+    const data = await response.json();
+    if (response.ok) {
+        alert("✅ Успешный вход!");
+        window.location.href = "/front-end/Main-Page/index.html";
+    } else {
+        alert("❌ " + data.error);
+    }
+} catch (error) {
+    alert("❌ Ошибка соединения с сервером!");
+}
+
+            });
+        });
+    </script>
+</body>
+</html>

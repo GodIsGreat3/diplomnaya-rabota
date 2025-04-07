@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop.co</title>
+    <script src="/front-end/Main-Page/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            Sign up and get 20% off to your first order. <a href="#"><U>Sign Up Now</U></a>
+        </div>
+        <div class="nav">
+            <div class="logo">SHOP.CO</div>
+            <nav>
+                <ul>
+                    <li><a href="/front-end/Products-page/shop.html">Shop</a></li>
+                    <li><a href="#section3">On Sale</a></li>
+                    <li><a href="#section2">New Arrivals</a></li>
+                    <li><a href="#section1">Brands</a></li>
+                </ul>
+            </nav>
+            <div class="searchBar">
+                <input type="text" placeholder="Search for products...">
+            </div>
+            <div class="icons">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>FIND CLOTHES<br>THAT MATCHES<br>YOUR STYLE</h1>
+            <p>Browse through our diverse range of meticulously crafted garments, designed <br> to bring out your individuality and cater to your sense of style.</p>
+            <a href="/front-end/Products-page/shop.html"><button class="shopNowButton">Shop Now</button></a>  
+        </div>
+        <div class="hero-stats">
+            <div>
+                <h2>200+</h2>
+                <p>International Brands</p>
+            </div>
+            <div>
+                <h2>2,000+</h2>
+                <p>High-Quality Products</p>
+            </div>
+            <div>
+                <h2>30,000+</h2>
+                <p>Happy Customers</p>
+            </div>
+        </div>
+    </section>
+    <section class="brands" id="section1">
+        <div class="brand-container">
+            <img src="/front-end/images/versace.png" alt="" class="bold">
+            <img src="/front-end/images/zara.png" alt="" class="bold">
+            <img src="/front-end/images/gucci.png" alt="" class="bold">
+            <img src="/front-end/images/prada.png" alt="" class="bold">
+            <img src="/front-end/images/calvinklein.png" alt="" class="bold">
+        </div>
+    </section>
+    <section class="products-section" id="section2">
+    <h2 class="section-title">NEW ARRIVALS</h2>
+    <div class="products-container">
+        <div class="product-card">
+            <img src="/front-end/productImages/image 7.png" alt="">
+            <p>T-shirt with Tape Details</p>
+            <p class="price">$120</p>
+        </div>
+        <div class="product-card">
+            <img src="/front-end/productImages/Frame 33.png" alt="">
+            <p>Skinny Fit Jeans</p>
+            <p class="price discount">$240 <span>$260</span></p>
+        </div>
+        <div class="product-card">
+            <img src="/front-end/productImages/Frame 34 (1).png" alt="">
+            <p>Checkered Shirt</p>
+            <p class="price">$180</p>
+        </div>
+        <div class="product-card">
+            <img src="/front-end/productImages/Frame 38 (1).png" alt="">
+            <p>Sleeve Striped T-shirt</p>
+            <p class="price discount">$130 <span>$160</span></p>
+        </div>
+    </div>
+    <a href="/front-end/Products-page/shop.html"><button class="view-all">View All</button></a>
+</section>
+
+<section class="products-section">
+    <h2 class="section-title" id="section3">TOP SELLING</h2>
+    <div class="products-container">
+        <div class="product-card">
+            <img src="/front-end/productImages/Frame 32 (1).png" alt="">
+            <p>Vertical Striped Shirt</p>
+            <p class="price discount">$212 <span>$232</span></p>
+        </div>
+        <div class="product-card">
+            <img src="/front-end/productImages/Frame 33 (1).png" alt="">
+            <p>Courage Graphic T-shirt</p>
+            <p class="price">$145</p>
+        </div>
+        <div class="product-card">
+            <img src="/front-end/productImages/Frame 34 (2).png" alt="">
+            <p>Loose Fit Bermuda Shorts</p>
+            <p class="price">$80</p>
+        </div>
+        <div class="product-card">
+            <img src="/front-end/productImages/Frame 38 (2).png" alt="">
+            <p>Faded Skinny Jeans</p>
+            <p class="price">$210</p>
+        </div>
+    </div>
+    <a href="/front-end/Products-page/shop.html"><button class="view-all">View All</button></a>
+</section>
+<section class="dress-style-section">
+    <div class="style-container">
+        <div class="style-card1">
+            <img src="/front-end/framesForGrid/Frame 61.png" alt="Casual">
+        </div>
+        <div class="style-card2">
+            <img src="/front-end/framesForGrid/Frame 62.png" alt="Formal">
+        </div>
+        <div class="style-card3">
+            <img src="/front-end/framesForGrid/Frame 64.png" alt="Party">
+        </div>
+        <div class="style-card4">
+            <img src="/front-end/framesForGrid/Frame 63.png" alt="Gym">
+        </div>
+    </div>
+</section>
+<section>
+    <div class="comments-section">
+        <h2>Комментарии</h2>
+        <div id="comments-list"></div>
+        <input type="text" id="comment-input" placeholder="Напишите комментарий...">
+        <button onclick="addComment()">Добавить комментарий</button>
+      </div>      
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="newsletter">
+            <h2><img src="/front-end/img/STAY UPTO DATE ABOUT OUR LATEST OFFERS.png"></h2>
+            <div>
+            <input type="email" placeholder="Enter your email address">
+            <button class="emaililput">Subscribe to Newsletter</button>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <div>
+                <h3><svg width="159" height="25" viewBox="0 0 159 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.6 24.7467C3.86667 24.72 0.213333 22.32 0.4 16.5067H7.04C7.12 18.0267 8.4 18.96 11.6 18.9867C14.4267 19.0133 15.7333 18.2133 15.7333 17.1733C15.7333 16.4533 15.3333 15.7067 13.1467 15.3867L10.2667 14.9333C6.02667 14.24 0.933333 13.7333 0.933333 8C0.933333 3.57333 4.53333 0.853333 11.6533 0.853333C18.08 0.853333 22.56 2.64 22.4267 9.04H15.84C15.5733 7.54667 14.32 6.61333 11.4933 6.61333C9.04 6.61333 8.02667 7.36 8.02667 8.37333C8.02667 9.01333 8.42667 9.78667 10.1333 10.0533L12.5067 10.4533C16.96 11.2 23.0667 11.3333 23.0667 17.4667C23.0667 22.3467 19.28 24.7733 11.6 24.7467ZM40.5446 1.6H47.9313V24H40.5446V15.8933H31.8513V24H24.4646V1.6H31.8513V9.70667H40.5446V1.6ZM62.1017 24.7467C54.395 24.7467 49.4083 19.9733 49.4083 12.8C49.4083 5.62667 54.395 0.853333 62.1017 0.853333C69.8083 0.853333 74.795 5.62667 74.795 12.8C74.795 19.9733 69.8083 24.7467 62.1017 24.7467ZM62.1017 18.3733C65.035 18.3733 67.4617 16.3467 67.4617 12.8C67.4617 9.25333 65.035 7.22667 62.1017 7.22667C59.1683 7.22667 56.7417 9.25333 56.7417 12.8C56.7417 16.3467 59.1683 18.3733 62.1017 18.3733ZM76.2771 24V1.6H88.9971C95.1038 1.6 98.7304 4.32 98.7304 10.3467C98.7304 16.3733 95.1038 19.0933 89.0238 19.0933H83.6638V24H76.2771ZM83.6638 12.96H88.3571C90.1438 12.96 91.2904 12.08 91.2904 10.3467C91.2904 8.61333 90.1438 7.73333 88.3837 7.73333H83.6638V12.96ZM102.426 24.4267C100.426 24.4267 98.7458 22.7733 98.7458 20.8C98.7458 18.8267 100.426 17.1733 102.426 17.1733C104.426 17.1733 106.106 18.8267 106.106 20.8C106.106 22.7733 104.426 24.4267 102.426 24.4267ZM120.151 24.7467C112.605 24.7467 107.565 19.9733 107.565 12.8C107.565 5.62667 112.605 0.853333 120.151 0.853333C125.618 0.853333 131.218 3.25333 131.965 10.8267H124.925C124.311 8.37333 122.578 7.22667 120.151 7.22667C117.218 7.22667 114.898 9.41333 114.898 12.8C114.898 16.1867 117.218 18.3733 120.151 18.3733C122.578 18.3733 124.311 17.2267 124.925 14.72H131.965C131.218 22.3467 125.671 24.7467 120.151 24.7467ZM146.008 24.7467C138.301 24.7467 133.315 19.9733 133.315 12.8C133.315 5.62667 138.301 0.853333 146.008 0.853333C153.715 0.853333 158.701 5.62667 158.701 12.8C158.701 19.9733 153.715 24.7467 146.008 24.7467ZM146.008 18.3733C148.941 18.3733 151.368 16.3467 151.368 12.8C151.368 9.25333 148.941 7.22667 146.008 7.22667C143.075 7.22667 140.648 9.25333 140.648 12.8C140.648 16.3467 143.075 18.3733 146.008 18.3733Z" fill="black"/>
+                    </svg></h3>
+                <p class="description"><img src="/front-end/img/We have clothes that suits your style and which you’re proud to wear. From women to men..svg"></p>
+                <div class="social-icons-b">
+                    <img class="social-icons-b" src="/front-end/img/1.svg">
+                    <img class="social-icons-b" src="/front-end/img/2.svg">
+                    <img class="social-icons-b" src="/front-end/img/3.svg">
+                    <img class="social-icons-b" src="/front-end/img/4.svg">
+                </div>
+            </div>
+            <div>
+                <h3>COMPANY</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Features</li>
+                    <li>Works</li>
+                    <li>Career</li>
+                </ul>
+            </div>
+            <div>
+                <h3>HELP</h3>
+                <ul>
+                    <li>Customer Support</li>
+                    <li>Delivery Details</li>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div>
+                <h3>FAQ</h3>
+                <ul>
+                    <li>Account</li>
+                    <li>Manage Deliveries</li>
+                    <li>Orders</li>
+                    <li>Payments</li>
+                </ul>
+            </div>
+            <div>
+                <h3>RESOURCES</h3>
+                <ul>
+                    <li>Free eBooks</li>
+                    <li>Development Tutorial</li>
+                    <li>How to - Blog</li>
+                    <li>Youtube Playlist</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Shop.co © 2000-2025, All Rights Reserved</p>
+            <div class="payment-icons">
+                <img src="/front-end/img/visa-svgrepo-com.svg" alt="Visa">
+                <img src="/front-end/img/mastercard-svgrepo-com.svg" alt="PayPal">
+                <img src="/front-end/img/paypal-svgrepo-com.svg" alt="Apple Pay">
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
